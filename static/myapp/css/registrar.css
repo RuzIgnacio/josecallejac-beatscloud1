@@ -1,0 +1,109 @@
+#body { 
+    background-image: url("static/myapp/imagenes/notas-musicales.png");
+    display: flex;
+}
+#icono{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    position:absolute;
+    top:-8px;
+    left:40px;
+    margin:auto;
+}
+
+#formulario{
+    
+    background-color: #0000005b ;
+    border-radius: 28px;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: -50px;
+    align-items: center;
+    max-width: 500px;
+}
+
+#btn_reg {
+    
+    margin-top: 10px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 28;
+    background-color: rgb(233, 210, 7);
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #000000;
+    font-family: Arial;
+    color: #f3f3f3;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    align-items: center;
+   
+}
+
+#nombre{
+
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    padding-left: auto;
+    margin-right: 15px;
+}
+
+#tipo_p {
+
+    text-align: left;
+}
+#nombre_artistico {
+
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    padding-left: auto;
+    margin-left: 14px;
+}
+#email {
+   
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    padding-left: auto;
+    margin-left: 88px;  
+}
+
+#tipo {
+  
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    margin-left: 67px;
+    
+}
+#tipo1 {
+
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+
+    margin-left: 67px;
+
+}
+#password {
+
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    padding-left: auto;
+    margin-left: 55px;
+
+}
+#r_password {
+
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    padding-left: auto;
+    margin-right: 11px;
+    margin-left:4px;
+}
+#tipo_p {
+    
+    text-align: left;
+    position: absolute;
+    margin-left:100px ;
+}

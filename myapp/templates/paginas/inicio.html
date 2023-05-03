@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block titulo %} Inicio {% endblock %}
+
+
+
+{% block contenido %}
+<br>
+
+
+<div class="card text-bg-dark">
+  <img src="static/myapp/imagenes/notas-musicales.png" class="card-img" alt="..." id="cardInicio">
+  <div class="card-img-overlay">
+    <h5 class="card-title">¡Bienvenidos a BeatsCloud!</h5><br>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo incidunt ab at earum sequi veritatis, voluptatum quas ex sit inventore aperiam adipisci minus quam eaque totam repellendus corporis tempora deserunt?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quo at error corrupti et numquam ut molestias quis aperiam vel voluptates animi soluta deleniti deserunt, reiciendis nam distinctio neque dolorum?
+    </p>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <img class="card-img-top" src="https://play-lh.googleusercontent.com/3wReLLObI6rQP0QEut9h_9qR2AVBpZ7iBptTmnDH-Z3gpwTOtK-ZddV2oo6-ZUX4yhQ" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Hip-Hop</h5>
+          <p class="card-text">This is a sample card.</p>
+          <a href="{% url 'catalogo' %}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img class="card-img-top" src="https://static.vecteezy.com/system/resources/previews/002/972/281/original/symbol-of-rock-n-roll-concept-art-of-rock-music-in-monochrome-style-vector.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Rock</h5>
+          <p class="card-text">This is another sample card.</p>
+          <a href="{% url 'catalogo' %}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img class="card-img-top" src="https://pbs.twimg.com/profile_images/1400573689138135042/AhFnOIb__400x400.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Pop</h5>
+          <p class="card-text">This is yet another sample card.</p>
+          <a href="{% url 'catalogo' %}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<form method="get">
+  <label for="genero">Filtrar por categoría:</label>
+  <select name="genero" id="genero">
+    <option value="">Todos los generos</option>
+    <option value="hip-hop">Hip-Hop</option>
+    <option value="rock">Rock</option>
+    <option value="pop">Pop</option>
+  </select>
+  <button type="submit">Filtrar</button>
+</form>
+<br>
+
+{% endblock %}    
